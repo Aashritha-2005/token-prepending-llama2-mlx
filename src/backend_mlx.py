@@ -1,4 +1,4 @@
-"""MLX backend. forward_states() is the plan's Appendix D block, unchanged."""
+# MLX backend. forward_states() is the plan's block
 import numpy as np
 import mlx.core as mx
 from mlx_lm import load
