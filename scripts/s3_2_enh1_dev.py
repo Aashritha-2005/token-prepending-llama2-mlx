@@ -1,15 +1,4 @@
-"""S3.2 Dev sweep + S3.3 freeze: Enhancement 1 (ReverseEOL + TP), plan Section 11. STS-B dev only.
-
-Forward view: S1.2 TP e* dev cache (cache/dev/tp_s1_e7_L20-32, layer 27; equals r3_dev).
-Reversed view: TP passes (s, e* from frozen_settings.json['tp_reproduction'], stop after 27, equal-length batching validated
-for TP in S0.13, the same path as the forward cache) for punct in {full, keep_final} -> cache/dev/tp_e7_rev_<punct>_L27.
-Controls for context (not used for selection): 6b fwd_revprompt and 6a shuf, TP -> cache/dev/tp_e7_<view>_L27.
-Selection: best dev; ties (< 0.05 below the best) go to alpha 0.5, normalisation on, full (field by field), as in S2.3.
-Gate S3.2: all 12 logged next to r3_dev; mean cos(e_fwd, e_rev) in (0.2, 0.995); rev-only (6c) >= r2_dev - 3.
-Best < r3_dev is allowed (negative finding). S3.3: freeze 'enh1' only if S3.2 passed; log the file hash.
-
-Usage (project root, venv active): python scripts/s3_2_enh1_dev.py   -> results/dev/S3.2_enh1.json, logs/S3.2.log
-"""
+# S3.2 Dev sweep + S3.3 freeze: Enhancement 1 (ReverseEOL + TP), plan Section 11. STS-B dev only.
 import datetime
 import hashlib
 import json
