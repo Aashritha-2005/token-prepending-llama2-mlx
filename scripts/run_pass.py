@@ -1,33 +1,3 @@
-"""One embedding pass + scoring, same pipeline code as the notebooks (views -> backend_mlx -> cache -> evalsts).
-
-Resumable: finished chunks live in cache/<split>/<run>/ and are reused when the same command is re-run.
-Never deletes anything. Stops cleanly (exit code 3) if free disk < 5 GB before a chunk.
-
-Examples (project root, venv active):
-  python scripts/run_pass.py --run r1r2_vanilla --plan vanilla --split test --layers 27,final
-  python scripts/run_pass.py --run r3_tp_e7 --plan tp --tp-start 1 --tp-exit 7 --split test --layers 27 --batched
-  python scripts/run_pass.py --run dry_tp_e7 --plan tp --tp-start 1 --tp-exit 7 --split dev --layers 27 --batched --limit 50
-  python scripts/run_pass.py --run r4_rev_full --plan vanilla --view rev --punct full --split test --layers 27   (S2.4)
-  python scripts/run_pass.py --run r5_tp_rev_full --plan tp --tp-start 1 --tp-exit 7 --view rev --punct full --split test --layers 27 --batched   (S3.4)
-
-Test passes of a non-fwd view (S2.4 onward) only cache states; the combined run is scored by its own step.
-CP mode (S2.9, CP without TP): --cp-from-frozen reads act_layer, alpha and the auxiliary prompt ONLY from
-frozen_settings.json["cp_alone"]; the auxiliary pass runs inside the same loop (B saved with the states, key LB).
-  python scripts/run_pass.py --run r7_cp --plan vanilla --split test --layers 27 --cp-from-frozen          (S2.9)
-  python scripts/run_pass.py --run dry_cp --plan vanilla --split dev --layers 27 --cp-from-frozen --limit 50
-  python scripts/run_pass.py --run dev_cp_x --plan vanilla --split dev --layers 27 --cp-index 4 --cp-alpha 2  (dev only)
-CP + TP mode (Stage 4, batch 1): --cptp-from-frozen reads index, alpha, D1 (aux with or without TP) and every prompt string ONLY
-from frozen_settings.json["enh2"]; --control sentiment swaps the auxiliary prompt for the sentiment control (run 9).
-  python scripts/run_pass.py --run r8_cptp --plan tp --tp-start 1 --tp-exit 7 --split test --layers 27 --cptp-from-frozen          (S4.6 run 8)
-  python scripts/run_pass.py --run r9_cptp_sent --plan tp --tp-start 1 --tp-exit 7 --split test --layers 27 --cptp-from-frozen --control sentiment
-  python scripts/run_pass.py --run dry_r8 --plan tp --tp-start 1 --tp-exit 7 --split dev --layers 27 --cptp-from-frozen --limit 50
-  python scripts/run_pass.py --run dev_x --plan tp --tp-start 1 --tp-exit 7 --split dev --layers 27 --cptp-dev --cp-index 4 --cp-alpha 2 --cp-aux tp  (dev only)
-CP + TP reversed view (Stage 5, run 10; notes/s5_preregistration.md): --cptp-from-frozen --view rev --punct keep_final. CP settings from
-'enh2', punct from 'enh1'; the auxiliary prompt receives the reversed text. A test pass also needs S4.8 and S5.1 and the frozen 'comb'.
-  python scripts/run_pass.py --run r10_cptp_rev --plan tp --tp-start 1 --tp-exit 7 --view rev --punct keep_final --split test --layers 27 --cptp-from-frozen
-Every pass ends with a 12-line END-OF-PASS banner (13 for CP + TP; times, wall, s/sentence, chunks, disk, cache meta sha256, Python, kernel).
-  python scripts/run_pass.py --banner-test        (50 dev sentences, vanilla, layer 27: prints the same banner)
-"""
 import argparse
 import datetime
 import hashlib
