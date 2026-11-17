@@ -1,7 +1,3 @@
-"""S6.1: recompute every logged paired bootstrap from the saved per-pair cosines with the
-S0.6-tested src/stats.paired_bootstrap (B = 2000, seed 0) and compare with the values in results/results.jsonl.
-Selects nothing, logs no gate, writes only results/figures/report_v3/S6.1_recompute.json (+ .csv).
-"""
 import csv
 import json
 import sys
