@@ -1,19 +1,3 @@
-"""S4.3 D1 pilot + S4.4 CP+TP dev grid (AGENT-RUN, dev; notes/s4_preregistration.md sections 3-4). Freezes and logs nothing.
-
---wait-for-gate S4.2: sleeps (checks every 60 s, a log line every 10 min) until gates.json shows S4.2 passed, no other 7B
-process is running and free disk >= 5 GB; then runs. Without it, it requires S4.2 passed now.
-  Sanity: wrapper in mode off == cache/dev/tp_e7_b1_L27 (first 20, min cos >= 0.99999).
-  S4.3 pilot (index 4, alpha 2): aux with TP and aux without TP. D1 = the higher dev; |diff| < 0.05 -> with TP.
-  S4.4 grid: index {2,3,4,5,6} x alpha {1,2,4} at the chosen D1 (the pilot's chosen pass is cell (4, 2)).
-  B = last-position o_proj input of layers[index] from the aux pass (stop_after index + 1), cached once per (index, D1).
-Caches: cache/dev/cptp_aux_i<idx>_<tp|notp>_B (key LB) and cache/dev/cptp_i<idx>_a<alpha>_<tp|notp>_L27.
-Saves: results/dev/S4.3_cptp_pilot.json, results/dev/S4.4_cptp_grid.json and .md, one results.jsonl line per pass
-(stages S4.3-pilot, S4.4-grid; dev). Ends with the pre-registered edge check (index 3-5, alpha 1-2); no extension.
-Selection, gate and freeze are scripts/s4_5_select.py (USER-RUN). Resumable: finished chunks are reused.
-
-Usage (project root, venv active):
-  nohup caffeinate -dims python scripts/s4_grid.py --wait-for-gate S4.2 > logs/s4_grid.log 2>&1 &
-"""
 import argparse
 import datetime
 import hashlib
