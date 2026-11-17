@@ -1,0 +1,24 @@
+22:00:00 start demo_vanilla_dev_full: 2909 prompts, 6 chunks of 500, layers [27], stop_after 27
+22:00:00   model models/llama2_7b_q8_meta, batched False, free 39.3 GB
+22:01:00 demo_vanilla_dev_full 1/6 computed | 0.120 s/sent | ~5 min left | free 38 GB | mlx 6.7/6.8 GB
+22:02:17 demo_vanilla_dev_full 2/6 computed | 0.136 s/sent | ~4 min left | free 38 GB | mlx 6.7/6.9 GB
+22:03:33 demo_vanilla_dev_full 3/6 computed | 0.141 s/sent | ~3 min left | free 38 GB | mlx 6.7/6.9 GB
+22:04:43 demo_vanilla_dev_full 4/6 computed | 0.141 s/sent | ~2 min left | free 38 GB | mlx 6.7/6.9 GB
+22:06:02 demo_vanilla_dev_full 5/6 computed | 0.145 s/sent | ~1 min left | free 38 GB | mlx 6.7/6.9 GB
+22:07:03 demo_vanilla_dev_full 6/6 computed | 0.145 s/sent | ~0 min left | free 38 GB | mlx 6.7/6.9 GB
+22:07:03 done demo_vanilla_dev_full: wall 7.0 min, 0.145 s/sentence computed
+22:07:03 | layer | STS-B dev |
+22:07:03 | 27 | 79.72 |
+22:07:03 free disk 38.1 GB
+22:07:03 ========================================================================================
+22:07:03 END OF PASS  demo_vanilla_dev_full
+22:07:03 start 2026-11-17 22:00:00   end 2026-11-17 22:07:03   wall 7.04 min
+22:07:03 s/sentence computed: 0.1451
+22:07:03 chunks: 6 computed, 0 reused, 6 total
+22:07:03 settings: plan vanilla, view fwd, split dev, layers 27, batched False, limit None
+22:07:03 free disk: 38.1 GB  (df -h ~: 36Gi avail of 460Gi)
+22:07:03 cache meta.json sha256[:12] 031b9d8f77e3  cache/dev/demo_vanilla_dev_full/meta.json
+22:07:03 python 3.11.9  ~/Downloads/tp_project/env/mlx/bin/python
+22:07:03 kernel tp-mlx -> ~/Downloads/tp_project/env/mlx/bin/python
+22:07:03 log: logs/demo_vanilla_dev_full.log
+22:07:03 ========================================================================================

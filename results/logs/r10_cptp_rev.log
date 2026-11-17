@@ -1,0 +1,79 @@
+15:12:38 test split allowed: gates S0.0..S1.4, S4.2, S4.5, S4.8 and S5.1 passed
+15:12:38   run 10 reversed view: punct keep_final (enh1); index 4, alpha 4, aux TP on s_rev (enh2)
+15:12:38   enh1, enh2, comb entry sha256 = S3.3, S4.5, S5.1; TP s 1 e 7, layer 27, batch 1
+15:12:43 start r10_cptp_rev: 28530 prompts, 58 chunks of 500, layers [27], stop_after 27
+15:12:43   model models/llama2_7b_q8_meta, batched False, free 106.4 GB
+15:14:43 r10_cptp_rev 1/58 computed | 0.240 s/sent | ~112 min left | free 106 GB | mlx 6.7/6.9 GB
+15:16:48 r10_cptp_rev 2/58 computed | 0.245 s/sent | ~112 min left | free 106 GB | mlx 6.7/6.9 GB
+15:18:58 r10_cptp_rev 3/58 computed | 0.250 s/sent | ~112 min left | free 106 GB | mlx 6.7/6.9 GB
+15:20:09 r10_cptp_rev 4/58 computed | 0.223 s/sent | ~99 min left | free 106 GB | mlx 6.7/6.9 GB
+15:21:23 r10_cptp_rev 5/58 computed | 0.208 s/sent | ~90 min left | free 106 GB | mlx 6.7/6.9 GB
+15:22:46 r10_cptp_rev 6/58 computed | 0.201 s/sent | ~85 min left | free 106 GB | mlx 6.7/6.9 GB
+15:24:04 r10_cptp_rev 7/58 computed | 0.194 s/sent | ~81 min left | free 106 GB | mlx 6.7/6.9 GB
+15:25:20 r10_cptp_rev 8/58 computed | 0.189 s/sent | ~77 min left | free 106 GB | mlx 6.7/6.9 GB
+15:26:39 r10_cptp_rev 9/58 computed | 0.186 s/sent | ~74 min left | free 106 GB | mlx 6.7/6.9 GB
+15:28:17 r10_cptp_rev 10/58 computed | 0.187 s/sent | ~73 min left | free 106 GB | mlx 6.7/6.9 GB
+15:29:49 r10_cptp_rev 11/58 computed | 0.186 s/sent | ~72 min left | free 106 GB | mlx 6.7/6.9 GB
+15:31:01 r10_cptp_rev 12/58 computed | 0.183 s/sent | ~69 min left | free 106 GB | mlx 6.7/6.9 GB
+15:32:16 r10_cptp_rev 13/58 computed | 0.180 s/sent | ~66 min left | free 106 GB | mlx 6.7/6.9 GB
+15:33:29 r10_cptp_rev 14/58 computed | 0.178 s/sent | ~64 min left | free 106 GB | mlx 6.7/6.9 GB
+15:34:41 r10_cptp_rev 15/58 computed | 0.176 s/sent | ~62 min left | free 106 GB | mlx 6.7/6.9 GB
+15:35:55 r10_cptp_rev 16/58 computed | 0.174 s/sent | ~59 min left | free 106 GB | mlx 6.7/6.9 GB
+15:37:12 r10_cptp_rev 17/58 computed | 0.173 s/sent | ~58 min left | free 106 GB | mlx 6.7/6.9 GB
+15:39:05 r10_cptp_rev 18/58 computed | 0.176 s/sent | ~57 min left | free 106 GB | mlx 6.7/6.9 GB
+15:40:16 r10_cptp_rev 19/58 computed | 0.174 s/sent | ~55 min left | free 106 GB | mlx 6.7/6.9 GB
+15:41:36 r10_cptp_rev 20/58 computed | 0.173 s/sent | ~53 min left | free 105 GB | mlx 6.7/6.9 GB
+15:42:51 r10_cptp_rev 21/58 computed | 0.172 s/sent | ~52 min left | free 105 GB | mlx 6.7/6.9 GB
+15:44:03 r10_cptp_rev 22/58 computed | 0.171 s/sent | ~50 min left | free 105 GB | mlx 6.7/6.9 GB
+15:45:18 r10_cptp_rev 23/58 computed | 0.170 s/sent | ~48 min left | free 105 GB | mlx 6.7/6.9 GB
+15:46:29 r10_cptp_rev 24/58 computed | 0.169 s/sent | ~46 min left | free 105 GB | mlx 6.7/6.9 GB
+15:47:42 r10_cptp_rev 25/58 computed | 0.168 s/sent | ~45 min left | free 105 GB | mlx 6.7/6.9 GB
+15:49:00 r10_cptp_rev 26/58 computed | 0.167 s/sent | ~43 min left | free 105 GB | mlx 6.7/6.9 GB
+15:50:55 r10_cptp_rev 27/58 computed | 0.170 s/sent | ~42 min left | free 105 GB | mlx 6.7/6.9 GB
+15:52:16 r10_cptp_rev 28/58 computed | 0.169 s/sent | ~41 min left | free 105 GB | mlx 6.7/6.9 GB
+15:54:09 r10_cptp_rev 29/58 computed | 0.171 s/sent | ~40 min left | free 105 GB | mlx 6.7/6.9 GB
+15:55:32 r10_cptp_rev 30/58 computed | 0.171 s/sent | ~39 min left | free 105 GB | mlx 6.7/6.9 GB
+15:56:54 r10_cptp_rev 31/58 computed | 0.171 s/sent | ~37 min left | free 105 GB | mlx 6.7/6.9 GB
+15:58:29 r10_cptp_rev 32/58 computed | 0.172 s/sent | ~36 min left | free 105 GB | mlx 6.7/6.9 GB
+15:59:56 r10_cptp_rev 33/58 computed | 0.172 s/sent | ~34 min left | free 105 GB | mlx 6.7/6.9 GB
+16:01:13 r10_cptp_rev 34/58 computed | 0.171 s/sent | ~33 min left | free 105 GB | mlx 6.7/6.9 GB
+16:02:25 r10_cptp_rev 35/58 computed | 0.170 s/sent | ~31 min left | free 105 GB | mlx 6.7/6.9 GB
+16:03:40 r10_cptp_rev 36/58 computed | 0.170 s/sent | ~30 min left | free 105 GB | mlx 6.7/6.9 GB
+16:04:55 r10_cptp_rev 37/58 computed | 0.169 s/sent | ~28 min left | free 105 GB | mlx 6.7/6.9 GB
+16:06:08 r10_cptp_rev 38/58 computed | 0.169 s/sent | ~27 min left | free 105 GB | mlx 6.7/6.9 GB
+16:07:26 r10_cptp_rev 39/58 computed | 0.168 s/sent | ~25 min left | free 105 GB | mlx 6.7/6.9 GB
+16:08:39 r10_cptp_rev 40/58 computed | 0.168 s/sent | ~24 min left | free 105 GB | mlx 6.7/6.9 GB
+16:10:16 r10_cptp_rev 41/58 computed | 0.168 s/sent | ~23 min left | free 105 GB | mlx 6.7/6.9 GB
+16:11:45 r10_cptp_rev 42/58 computed | 0.169 s/sent | ~21 min left | free 105 GB | mlx 6.7/6.9 GB
+16:12:58 r10_cptp_rev 43/58 computed | 0.168 s/sent | ~20 min left | free 105 GB | mlx 6.7/6.9 GB
+16:14:39 r10_cptp_rev 44/58 computed | 0.169 s/sent | ~18 min left | free 105 GB | mlx 6.7/6.9 GB
+16:15:53 r10_cptp_rev 45/58 computed | 0.168 s/sent | ~17 min left | free 105 GB | mlx 6.7/6.9 GB
+16:17:07 r10_cptp_rev 46/58 computed | 0.168 s/sent | ~15 min left | free 105 GB | mlx 6.7/6.9 GB
+16:18:48 r10_cptp_rev 47/58 computed | 0.169 s/sent | ~14 min left | free 105 GB | mlx 6.7/6.9 GB
+16:20:04 r10_cptp_rev 48/58 computed | 0.168 s/sent | ~13 min left | free 105 GB | mlx 6.7/6.9 GB
+16:21:20 r10_cptp_rev 49/58 computed | 0.168 s/sent | ~11 min left | free 105 GB | mlx 6.7/6.9 GB
+16:22:32 r10_cptp_rev 50/58 computed | 0.167 s/sent | ~10 min left | free 105 GB | mlx 6.7/6.9 GB
+16:23:43 r10_cptp_rev 51/58 computed | 0.167 s/sent | ~8 min left | free 105 GB | mlx 6.7/6.9 GB
+16:25:01 r10_cptp_rev 52/58 computed | 0.167 s/sent | ~7 min left | free 105 GB | mlx 6.7/6.9 GB
+16:26:21 r10_cptp_rev 53/58 computed | 0.167 s/sent | ~6 min left | free 105 GB | mlx 6.7/6.9 GB
+16:27:41 r10_cptp_rev 54/58 computed | 0.167 s/sent | ~4 min left | free 105 GB | mlx 6.7/6.9 GB
+16:28:55 r10_cptp_rev 55/58 computed | 0.166 s/sent | ~3 min left | free 105 GB | mlx 6.7/6.9 GB
+16:30:10 r10_cptp_rev 56/58 computed | 0.166 s/sent | ~1 min left | free 105 GB | mlx 6.7/6.9 GB
+16:31:27 r10_cptp_rev 57/58 computed | 0.166 s/sent | ~0 min left | free 105 GB | mlx 6.7/6.9 GB
+16:31:31 r10_cptp_rev 58/58 computed | 0.166 s/sent | ~0 min left | free 105 GB | mlx 6.7/6.9 GB
+16:31:33 done r10_cptp_rev: wall 78.8 min, 0.166 s/sentence computed
+16:31:33 states cached in cache/test/r10_cptp_rev; not scored here (scored by its own step)
+16:31:33 free disk 104.6 GB
+16:31:33 ========================================================================================
+16:31:33 END OF PASS  r10_cptp_rev
+16:31:33 start 2026-11-05 15:12:43   end 2026-11-05 16:31:33   wall 78.83 min
+16:31:33 s/sentence computed: 0.1656
+16:31:33 chunks: 58 computed, 0 reused, 58 total
+16:31:33 settings: plan tp, view rev, split test, layers 27, batched False, limit None
+16:31:33   CP+TP index 4 alpha 4 aux with TP (frozen enh2)
+16:31:33 free disk: 104.6 GB  (df -h ~: 97Gi avail of 460Gi)
+16:31:33 cache meta.json sha256[:12] 92759a68bb27  cache/test/r10_cptp_rev/meta.json
+16:31:33 python 3.11.9  ~/Downloads/tp_project/env/mlx/bin/python
+16:31:33 kernel tp-mlx -> ~/Downloads/tp_project/env/mlx/bin/python
+16:31:33 log: logs/r10_cptp_rev.log
+16:31:33 ========================================================================================

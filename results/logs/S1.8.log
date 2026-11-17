@@ -1,0 +1,8 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+free 99.8 GB
+vanilla_b1_stop27    154.1 ±   0.3 ms / sentence
+tp_e7_b1_stop27      158.2 ±   0.5 ms / sentence
+ratio TP/vanilla (batch 1, M=27) = 1.026  (paper 1.04, pass if <= 1.25)  tokens {'vanilla_mean': 28.135, 'tp_mean': 29.135}  swap total = 5120.00M  used = 3855.88M  free = 1264.12M  (encrypted)

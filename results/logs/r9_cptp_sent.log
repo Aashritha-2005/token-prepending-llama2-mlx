@@ -1,0 +1,80 @@
+12:39:15 test split allowed: gates S0.0..S1.4, S4.2 and S4.5 passed
+12:39:15   frozen 'enh2' = index 4, alpha 4, aux with TP, scaled, TP s 1 e 7, layer 27, batch 1
+12:39:15   entry sha256 matches S4.5; CONTROL 9: sentiment auxiliary prompt
+12:39:21 start r9_cptp_sent: 28530 prompts, 58 chunks of 500, layers [27], stop_after 27
+12:39:21   model models/llama2_7b_q8_meta, batched False, free 107.3 GB
+12:41:15 r9_cptp_sent 1/58 computed | 0.227 s/sent | ~106 min left | free 107 GB | mlx 6.7/6.9 GB
+12:43:14 r9_cptp_sent 2/58 computed | 0.232 s/sent | ~107 min left | free 107 GB | mlx 6.7/6.9 GB
+12:45:15 r9_cptp_sent 3/58 computed | 0.236 s/sent | ~106 min left | free 107 GB | mlx 6.7/6.9 GB
+12:46:24 r9_cptp_sent 4/58 computed | 0.211 s/sent | ~93 min left | free 107 GB | mlx 6.7/6.9 GB
+12:47:31 r9_cptp_sent 5/58 computed | 0.196 s/sent | ~85 min left | free 107 GB | mlx 6.7/6.9 GB
+12:48:42 r9_cptp_sent 6/58 computed | 0.187 s/sent | ~80 min left | free 107 GB | mlx 6.7/6.9 GB
+12:49:55 r9_cptp_sent 7/58 computed | 0.181 s/sent | ~75 min left | free 107 GB | mlx 6.7/6.9 GB
+12:51:05 r9_cptp_sent 8/58 computed | 0.176 s/sent | ~72 min left | free 107 GB | mlx 6.7/6.9 GB
+12:52:19 r9_cptp_sent 9/58 computed | 0.173 s/sent | ~69 min left | free 107 GB | mlx 6.7/6.9 GB
+12:53:47 r9_cptp_sent 10/58 computed | 0.173 s/sent | ~68 min left | free 107 GB | mlx 6.7/6.9 GB
+12:55:14 r9_cptp_sent 11/58 computed | 0.173 s/sent | ~66 min left | free 107 GB | mlx 6.7/6.9 GB
+12:56:23 r9_cptp_sent 12/58 computed | 0.170 s/sent | ~64 min left | free 107 GB | mlx 6.7/6.9 GB
+12:57:32 r9_cptp_sent 13/58 computed | 0.168 s/sent | ~62 min left | free 107 GB | mlx 6.7/6.9 GB
+12:58:42 r9_cptp_sent 14/58 computed | 0.166 s/sent | ~59 min left | free 107 GB | mlx 6.7/6.9 GB
+12:59:50 r9_cptp_sent 15/58 computed | 0.164 s/sent | ~57 min left | free 107 GB | mlx 6.7/6.9 GB
+13:01:01 r9_cptp_sent 16/58 computed | 0.162 s/sent | ~56 min left | free 107 GB | mlx 6.7/6.9 GB
+13:02:13 r9_cptp_sent 17/58 computed | 0.161 s/sent | ~54 min left | free 107 GB | mlx 6.7/6.9 GB
+13:03:59 r9_cptp_sent 18/58 computed | 0.164 s/sent | ~53 min left | free 107 GB | mlx 6.7/6.9 GB
+13:05:07 r9_cptp_sent 19/58 computed | 0.163 s/sent | ~52 min left | free 107 GB | mlx 6.7/6.9 GB
+13:06:22 r9_cptp_sent 20/58 computed | 0.162 s/sent | ~50 min left | free 107 GB | mlx 6.7/6.9 GB
+13:07:35 r9_cptp_sent 21/58 computed | 0.161 s/sent | ~48 min left | free 107 GB | mlx 6.7/6.9 GB
+13:08:48 r9_cptp_sent 22/58 computed | 0.160 s/sent | ~47 min left | free 107 GB | mlx 6.7/6.9 GB
+13:09:59 r9_cptp_sent 23/58 computed | 0.160 s/sent | ~45 min left | free 107 GB | mlx 6.7/6.9 GB
+13:11:12 r9_cptp_sent 24/58 computed | 0.159 s/sent | ~44 min left | free 106 GB | mlx 6.7/6.9 GB
+13:12:22 r9_cptp_sent 25/58 computed | 0.158 s/sent | ~42 min left | free 106 GB | mlx 6.7/6.9 GB
+13:13:34 r9_cptp_sent 26/58 computed | 0.158 s/sent | ~41 min left | free 106 GB | mlx 6.7/6.9 GB
+13:15:20 r9_cptp_sent 27/58 computed | 0.160 s/sent | ~40 min left | free 106 GB | mlx 6.7/6.9 GB
+13:16:32 r9_cptp_sent 28/58 computed | 0.159 s/sent | ~39 min left | free 106 GB | mlx 6.7/6.9 GB
+13:18:09 r9_cptp_sent 29/58 computed | 0.160 s/sent | ~38 min left | free 106 GB | mlx 6.7/6.9 GB
+13:19:27 r9_cptp_sent 30/58 computed | 0.160 s/sent | ~36 min left | free 106 GB | mlx 6.7/6.9 GB
+13:20:38 r9_cptp_sent 31/58 computed | 0.160 s/sent | ~35 min left | free 106 GB | mlx 6.7/6.9 GB
+13:22:04 r9_cptp_sent 32/58 computed | 0.160 s/sent | ~33 min left | free 106 GB | mlx 6.7/6.9 GB
+13:23:29 r9_cptp_sent 33/58 computed | 0.160 s/sent | ~32 min left | free 106 GB | mlx 6.7/6.9 GB
+13:24:43 r9_cptp_sent 34/58 computed | 0.160 s/sent | ~31 min left | free 106 GB | mlx 6.7/6.9 GB
+13:25:54 r9_cptp_sent 35/58 computed | 0.159 s/sent | ~29 min left | free 106 GB | mlx 6.7/6.9 GB
+13:27:09 r9_cptp_sent 36/58 computed | 0.159 s/sent | ~28 min left | free 106 GB | mlx 6.7/6.9 GB
+13:28:26 r9_cptp_sent 37/58 computed | 0.159 s/sent | ~27 min left | free 106 GB | mlx 6.7/6.9 GB
+13:29:37 r9_cptp_sent 38/58 computed | 0.159 s/sent | ~25 min left | free 106 GB | mlx 6.7/6.9 GB
+13:30:52 r9_cptp_sent 39/58 computed | 0.158 s/sent | ~24 min left | free 106 GB | mlx 6.7/6.9 GB
+13:32:04 r9_cptp_sent 40/58 computed | 0.158 s/sent | ~22 min left | free 106 GB | mlx 6.7/6.9 GB
+13:33:35 r9_cptp_sent 41/58 computed | 0.159 s/sent | ~21 min left | free 106 GB | mlx 6.7/6.9 GB
+13:35:01 r9_cptp_sent 42/58 computed | 0.159 s/sent | ~20 min left | free 106 GB | mlx 6.7/6.9 GB
+13:36:12 r9_cptp_sent 43/58 computed | 0.159 s/sent | ~19 min left | free 106 GB | mlx 6.7/6.9 GB
+13:37:47 r9_cptp_sent 44/58 computed | 0.159 s/sent | ~17 min left | free 106 GB | mlx 6.7/6.9 GB
+13:38:58 r9_cptp_sent 45/58 computed | 0.159 s/sent | ~16 min left | free 106 GB | mlx 6.7/6.9 GB
+13:40:12 r9_cptp_sent 46/58 computed | 0.159 s/sent | ~15 min left | free 106 GB | mlx 6.7/6.9 GB
+13:41:47 r9_cptp_sent 47/58 computed | 0.159 s/sent | ~13 min left | free 106 GB | mlx 6.7/6.9 GB
+13:43:09 r9_cptp_sent 48/58 computed | 0.159 s/sent | ~12 min left | free 106 GB | mlx 6.7/6.9 GB
+13:44:20 r9_cptp_sent 49/58 computed | 0.159 s/sent | ~11 min left | free 106 GB | mlx 6.7/6.9 GB
+13:45:30 r9_cptp_sent 50/58 computed | 0.159 s/sent | ~9 min left | free 106 GB | mlx 6.7/6.9 GB
+13:46:40 r9_cptp_sent 51/58 computed | 0.158 s/sent | ~8 min left | free 106 GB | mlx 6.7/6.9 GB
+13:47:55 r9_cptp_sent 52/58 computed | 0.158 s/sent | ~7 min left | free 106 GB | mlx 6.7/6.9 GB
+13:49:10 r9_cptp_sent 53/58 computed | 0.158 s/sent | ~5 min left | free 106 GB | mlx 6.7/6.9 GB
+13:50:25 r9_cptp_sent 54/58 computed | 0.158 s/sent | ~4 min left | free 106 GB | mlx 6.7/6.9 GB
+13:51:39 r9_cptp_sent 55/58 computed | 0.158 s/sent | ~3 min left | free 106 GB | mlx 6.7/6.9 GB
+13:52:50 r9_cptp_sent 56/58 computed | 0.157 s/sent | ~1 min left | free 106 GB | mlx 6.7/6.9 GB
+13:54:05 r9_cptp_sent 57/58 computed | 0.157 s/sent | ~0 min left | free 106 GB | mlx 6.7/6.9 GB
+13:54:10 r9_cptp_sent 58/58 computed | 0.157 s/sent | ~0 min left | free 106 GB | mlx 6.7/6.9 GB
+13:54:12 done r9_cptp_sent: wall 74.8 min, 0.157 s/sentence computed
+13:54:12 | layer | STS12 | STS13 | STS14 | STS15 | STS16 | STS-B | SICK-R | Avg |
+13:54:12 | 27 | 65.42 | 83.76 | 73.83 | 80.83 | 80.22 | 78.01 | 74.63 | 76.67 |
+13:54:12 free disk 105.5 GB
+13:54:12 ========================================================================================
+13:54:12 END OF PASS  r9_cptp_sent
+13:54:12 start 2026-11-05 12:39:21   end 2026-11-05 13:54:12   wall 74.83 min
+13:54:12 s/sentence computed: 0.1572
+13:54:12 chunks: 58 computed, 0 reused, 58 total
+13:54:12 settings: plan tp, view fwd, split test, layers 27, batched False, limit None
+13:54:12   CP+TP index 4 alpha 4 aux with TP, sentiment control (frozen enh2)
+13:54:12 free disk: 105.5 GB  (df -h ~: 98Gi avail of 460Gi)
+13:54:12 cache meta.json sha256[:12] 20cbc927919d  cache/test/r9_cptp_sent/meta.json
+13:54:12 python 3.11.9  ~/Downloads/tp_project/env/mlx/bin/python
+13:54:12 kernel tp-mlx -> ~/Downloads/tp_project/env/mlx/bin/python
+13:54:12 log: logs/r9_cptp_sent.log
+13:54:12 ========================================================================================

@@ -1,0 +1,65 @@
+15:35:11 test split allowed: gates S0.0..S1.4 passed; frozen setting 'vanilla' = {'plan': 'vanilla'}
+15:35:17 start r1r2_vanilla: 28530 prompts, 58 chunks of 500, layers [27, 'final'], stop_after None, batched False, model models/llama2_7b_q8_meta, free 97.5 GB
+15:37:09 r1r2_vanilla chunk 1/58 (computed) | 500/28530 prompts | 0.223 s/sentence | ~104.0 min left | free 95.4 GB
+15:39:09 r1r2_vanilla chunk 2/58 (computed) | 1000/28530 prompts | 0.232 s/sentence | ~106.3 min left | free 94.3 GB
+15:41:26 r1r2_vanilla chunk 3/58 (computed) | 1500/28530 prompts | 0.246 s/sentence | ~110.9 min left | free 94.3 GB
+15:42:40 r1r2_vanilla chunk 4/58 (computed) | 2000/28530 prompts | 0.221 s/sentence | ~97.8 min left | free 94.3 GB
+15:43:51 r1r2_vanilla chunk 5/58 (computed) | 2500/28530 prompts | 0.205 s/sentence | ~89.1 min left | free 94.2 GB
+15:45:04 r1r2_vanilla chunk 6/58 (computed) | 3000/28530 prompts | 0.196 s/sentence | ~83.2 min left | free 94.2 GB
+15:46:18 r1r2_vanilla chunk 7/58 (computed) | 3500/28530 prompts | 0.189 s/sentence | ~78.8 min left | free 94.2 GB
+15:47:29 r1r2_vanilla chunk 8/58 (computed) | 4000/28530 prompts | 0.183 s/sentence | ~74.8 min left | free 94.2 GB
+15:48:42 r1r2_vanilla chunk 9/58 (computed) | 4500/28530 prompts | 0.179 s/sentence | ~71.7 min left | free 94.2 GB
+15:50:11 r1r2_vanilla chunk 10/58 (computed) | 5000/28530 prompts | 0.179 s/sentence | ~70.1 min left | free 94.2 GB
+15:51:44 r1r2_vanilla chunk 11/58 (computed) | 5500/28530 prompts | 0.179 s/sentence | ~68.9 min left | free 93.1 GB
+15:52:55 r1r2_vanilla chunk 12/58 (computed) | 6000/28530 prompts | 0.176 s/sentence | ~66.2 min left | free 93.1 GB
+15:54:07 r1r2_vanilla chunk 13/58 (computed) | 6500/28530 prompts | 0.174 s/sentence | ~63.8 min left | free 93.1 GB
+15:55:18 r1r2_vanilla chunk 14/58 (computed) | 7000/28530 prompts | 0.172 s/sentence | ~61.6 min left | free 93.1 GB
+15:56:28 r1r2_vanilla chunk 15/58 (computed) | 7500/28530 prompts | 0.169 s/sentence | ~59.4 min left | free 93.1 GB
+15:57:39 r1r2_vanilla chunk 16/58 (computed) | 8000/28530 prompts | 0.168 s/sentence | ~57.4 min left | free 93.1 GB
+15:58:50 r1r2_vanilla chunk 17/58 (computed) | 8500/28530 prompts | 0.166 s/sentence | ~55.5 min left | free 93.1 GB
+16:00:40 r1r2_vanilla chunk 18/58 (computed) | 9000/28530 prompts | 0.169 s/sentence | ~55.1 min left | free 93.1 GB
+16:01:49 r1r2_vanilla chunk 19/58 (computed) | 9500/28530 prompts | 0.168 s/sentence | ~53.2 min left | free 93.1 GB
+16:03:01 r1r2_vanilla chunk 20/58 (computed) | 10000/28530 prompts | 0.166 s/sentence | ~51.4 min left | free 93.0 GB
+16:04:12 r1r2_vanilla chunk 21/58 (computed) | 10500/28530 prompts | 0.165 s/sentence | ~49.6 min left | free 93.0 GB
+16:05:21 r1r2_vanilla chunk 22/58 (computed) | 11000/28530 prompts | 0.164 s/sentence | ~47.9 min left | free 92.0 GB
+16:06:32 r1r2_vanilla chunk 23/58 (computed) | 11500/28530 prompts | 0.163 s/sentence | ~46.3 min left | free 92.0 GB
+16:07:40 r1r2_vanilla chunk 24/58 (computed) | 12000/28530 prompts | 0.162 s/sentence | ~44.6 min left | free 91.9 GB
+16:08:50 r1r2_vanilla chunk 25/58 (computed) | 12500/28530 prompts | 0.161 s/sentence | ~43.0 min left | free 91.9 GB
+16:10:02 r1r2_vanilla chunk 26/58 (computed) | 13000/28530 prompts | 0.160 s/sentence | ~41.5 min left | free 91.9 GB
+16:11:48 r1r2_vanilla chunk 27/58 (computed) | 13500/28530 prompts | 0.162 s/sentence | ~40.6 min left | free 91.9 GB
+16:13:00 r1r2_vanilla chunk 28/58 (computed) | 14000/28530 prompts | 0.162 s/sentence | ~39.1 min left | free 91.9 GB
+16:14:41 r1r2_vanilla chunk 29/58 (computed) | 14500/28530 prompts | 0.163 s/sentence | ~38.1 min left | free 91.9 GB
+16:15:59 r1r2_vanilla chunk 30/58 (computed) | 15000/28530 prompts | 0.163 s/sentence | ~36.7 min left | free 91.9 GB
+16:17:11 r1r2_vanilla chunk 31/58 (computed) | 15500/28530 prompts | 0.162 s/sentence | ~35.2 min left | free 91.9 GB
+16:18:40 r1r2_vanilla chunk 32/58 (computed) | 16000/28530 prompts | 0.163 s/sentence | ~34.0 min left | free 91.9 GB
+16:20:05 r1r2_vanilla chunk 33/58 (computed) | 16500/28530 prompts | 0.163 s/sentence | ~32.7 min left | free 91.9 GB
+16:21:17 r1r2_vanilla chunk 34/58 (computed) | 17000/28530 prompts | 0.162 s/sentence | ~31.2 min left | free 91.9 GB
+16:22:26 r1r2_vanilla chunk 35/58 (computed) | 17500/28530 prompts | 0.162 s/sentence | ~29.7 min left | free 91.9 GB
+16:23:37 r1r2_vanilla chunk 36/58 (computed) | 18000/28530 prompts | 0.161 s/sentence | ~28.3 min left | free 91.8 GB
+16:24:47 r1r2_vanilla chunk 37/58 (computed) | 18500/28530 prompts | 0.161 s/sentence | ~26.8 min left | free 91.8 GB
+16:25:56 r1r2_vanilla chunk 38/58 (computed) | 19000/28530 prompts | 0.160 s/sentence | ~25.4 min left | free 91.8 GB
+16:27:07 r1r2_vanilla chunk 39/58 (computed) | 19500/28530 prompts | 0.159 s/sentence | ~24.0 min left | free 91.8 GB
+16:28:17 r1r2_vanilla chunk 40/58 (computed) | 20000/28530 prompts | 0.159 s/sentence | ~22.6 min left | free 91.8 GB
+16:29:47 r1r2_vanilla chunk 41/58 (computed) | 20500/28530 prompts | 0.160 s/sentence | ~21.3 min left | free 91.8 GB
+16:31:12 r1r2_vanilla chunk 42/58 (computed) | 21000/28530 prompts | 0.160 s/sentence | ~20.0 min left | free 91.8 GB
+16:32:21 r1r2_vanilla chunk 43/58 (computed) | 21500/28530 prompts | 0.159 s/sentence | ~18.7 min left | free 91.8 GB
+16:34:00 r1r2_vanilla chunk 44/58 (computed) | 22000/28530 prompts | 0.160 s/sentence | ~17.4 min left | free 91.8 GB
+16:35:11 r1r2_vanilla chunk 45/58 (computed) | 22500/28530 prompts | 0.160 s/sentence | ~16.1 min left | free 91.8 GB
+16:36:22 r1r2_vanilla chunk 46/58 (computed) | 23000/28530 prompts | 0.159 s/sentence | ~14.7 min left | free 91.8 GB
+16:37:59 r1r2_vanilla chunk 47/58 (computed) | 23500/28530 prompts | 0.160 s/sentence | ~13.4 min left | free 91.8 GB
+16:39:11 r1r2_vanilla chunk 48/58 (computed) | 24000/28530 prompts | 0.160 s/sentence | ~12.1 min left | free 91.7 GB
+16:40:20 r1r2_vanilla chunk 49/58 (computed) | 24500/28530 prompts | 0.159 s/sentence | ~10.7 min left | free 91.7 GB
+16:41:29 r1r2_vanilla chunk 50/58 (computed) | 25000/28530 prompts | 0.159 s/sentence | ~9.3 min left | free 91.7 GB
+16:42:37 r1r2_vanilla chunk 51/58 (computed) | 25500/28530 prompts | 0.158 s/sentence | ~8.0 min left | free 91.7 GB
+16:43:50 r1r2_vanilla chunk 52/58 (computed) | 26000/28530 prompts | 0.158 s/sentence | ~6.7 min left | free 91.7 GB
+16:45:03 r1r2_vanilla chunk 53/58 (computed) | 26500/28530 prompts | 0.158 s/sentence | ~5.3 min left | free 91.7 GB
+16:46:16 r1r2_vanilla chunk 54/58 (computed) | 27000/28530 prompts | 0.158 s/sentence | ~4.0 min left | free 91.7 GB
+16:47:26 r1r2_vanilla chunk 55/58 (computed) | 27500/28530 prompts | 0.157 s/sentence | ~2.7 min left | free 91.7 GB
+16:48:36 r1r2_vanilla chunk 56/58 (computed) | 28000/28530 prompts | 0.157 s/sentence | ~1.4 min left | free 91.7 GB
+16:49:49 r1r2_vanilla chunk 57/58 (computed) | 28500/28530 prompts | 0.157 s/sentence | ~0.1 min left | free 91.7 GB
+16:49:53 r1r2_vanilla chunk 58/58 (computed) | 28530/28530 prompts | 0.157 s/sentence | ~0.0 min left | free 91.7 GB
+16:50:02 done r1r2_vanilla: wall 74.7 min, 0.157 s/sentence computed
+16:50:02 | layer | STS12 | STS13 | STS14 | STS15 | STS16 | STS-B | SICK-R | Avg |
+16:50:02 | 27 | 64.26 | 82.09 | 72.27 | 78.95 | 77.24 | 76.84 | 72.41 | 74.87 |
+16:50:02 | final | 58.72 | 77.11 | 66.42 | 73.34 | 73.50 | 71.78 | 69.65 | 70.07 |
+16:50:02 free disk 90.6 GB

@@ -43,3 +43,4 @@ env/
 venv/
 .venv/
 .env.*
+!results/logs/

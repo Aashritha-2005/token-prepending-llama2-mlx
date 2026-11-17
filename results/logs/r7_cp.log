@@ -1,0 +1,76 @@
+03:59:54 test split allowed: gates S0.0..S1.4 and S2.6..S2.8 passed; frozen 'cp_alone' = act_layer 4 (paper l 5), alpha 2, scaled, layer 27, vanilla, batch 1; entry sha256 matches S2.8
+04:00:00 start r7_cp: 28530 prompts, 58 chunks of 500, layers [27], stop_after 27, batched False, model models/llama2_7b_q8_meta, free 111.2 GB
+04:01:53 r7_cp chunk 1/58 (computed) | 500/28530 prompts | 0.226 s/sentence | ~105.6 min left | free 110.1 GB | mlx active 6.7 GB peak 6.9 GB
+04:03:53 r7_cp chunk 2/58 (computed) | 1000/28530 prompts | 0.232 s/sentence | ~106.6 min left | free 110.1 GB | mlx active 6.7 GB peak 6.9 GB
+04:05:57 r7_cp chunk 3/58 (computed) | 1500/28530 prompts | 0.238 s/sentence | ~107.2 min left | free 110.1 GB | mlx active 6.7 GB peak 6.9 GB
+04:07:07 r7_cp chunk 4/58 (computed) | 2000/28530 prompts | 0.213 s/sentence | ~94.3 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:08:17 r7_cp chunk 5/58 (computed) | 2500/28530 prompts | 0.198 s/sentence | ~86.1 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:09:31 r7_cp chunk 6/58 (computed) | 3000/28530 prompts | 0.190 s/sentence | ~80.9 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:10:46 r7_cp chunk 7/58 (computed) | 3500/28530 prompts | 0.184 s/sentence | ~76.9 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:11:58 r7_cp chunk 8/58 (computed) | 4000/28530 prompts | 0.179 s/sentence | ~73.3 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:13:11 r7_cp chunk 9/58 (computed) | 4500/28530 prompts | 0.176 s/sentence | ~70.3 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:14:39 r7_cp chunk 10/58 (computed) | 5000/28530 prompts | 0.176 s/sentence | ~68.9 min left | free 110.0 GB | mlx active 6.7 GB peak 6.9 GB
+04:16:09 r7_cp chunk 11/58 (computed) | 5500/28530 prompts | 0.176 s/sentence | ~67.6 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:17:19 r7_cp chunk 12/58 (computed) | 6000/28530 prompts | 0.173 s/sentence | ~65.0 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:18:30 r7_cp chunk 13/58 (computed) | 6500/28530 prompts | 0.171 s/sentence | ~62.7 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:19:42 r7_cp chunk 14/58 (computed) | 7000/28530 prompts | 0.169 s/sentence | ~60.5 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:20:54 r7_cp chunk 15/58 (computed) | 7500/28530 prompts | 0.167 s/sentence | ~58.6 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:22:06 r7_cp chunk 16/58 (computed) | 8000/28530 prompts | 0.166 s/sentence | ~56.7 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:23:21 r7_cp chunk 17/58 (computed) | 8500/28530 prompts | 0.165 s/sentence | ~55.0 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:25:06 r7_cp chunk 18/58 (computed) | 9000/28530 prompts | 0.167 s/sentence | ~54.4 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:26:16 r7_cp chunk 19/58 (computed) | 9500/28530 prompts | 0.166 s/sentence | ~52.6 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:27:28 r7_cp chunk 20/58 (computed) | 10000/28530 prompts | 0.165 s/sentence | ~50.9 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:28:40 r7_cp chunk 21/58 (computed) | 10500/28530 prompts | 0.164 s/sentence | ~49.2 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:29:50 r7_cp chunk 22/58 (computed) | 11000/28530 prompts | 0.163 s/sentence | ~47.5 min left | free 109.9 GB | mlx active 6.7 GB peak 6.9 GB
+04:31:02 r7_cp chunk 23/58 (computed) | 11500/28530 prompts | 0.162 s/sentence | ~45.9 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:32:11 r7_cp chunk 24/58 (computed) | 12000/28530 prompts | 0.161 s/sentence | ~44.3 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:33:26 r7_cp chunk 25/58 (computed) | 12500/28530 prompts | 0.160 s/sentence | ~42.8 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:34:40 r7_cp chunk 26/58 (computed) | 13000/28530 prompts | 0.160 s/sentence | ~41.4 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:36:28 r7_cp chunk 27/58 (computed) | 13500/28530 prompts | 0.162 s/sentence | ~40.6 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:37:44 r7_cp chunk 28/58 (computed) | 14000/28530 prompts | 0.162 s/sentence | ~39.1 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:39:23 r7_cp chunk 29/58 (computed) | 14500/28530 prompts | 0.163 s/sentence | ~38.1 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:40:42 r7_cp chunk 30/58 (computed) | 15000/28530 prompts | 0.163 s/sentence | ~36.7 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:41:54 r7_cp chunk 31/58 (computed) | 15500/28530 prompts | 0.162 s/sentence | ~35.2 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:43:20 r7_cp chunk 32/58 (computed) | 16000/28530 prompts | 0.162 s/sentence | ~33.9 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+04:44:44 r7_cp chunk 33/58 (computed) | 16500/28530 prompts | 0.163 s/sentence | ~32.6 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:45:57 r7_cp chunk 34/58 (computed) | 17000/28530 prompts | 0.162 s/sentence | ~31.1 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:47:06 r7_cp chunk 35/58 (computed) | 17500/28530 prompts | 0.161 s/sentence | ~29.7 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:48:18 r7_cp chunk 36/58 (computed) | 18000/28530 prompts | 0.161 s/sentence | ~28.2 min left | free 109.8 GB | mlx active 6.7 GB peak 6.9 GB
+04:49:32 r7_cp chunk 37/58 (computed) | 18500/28530 prompts | 0.161 s/sentence | ~26.8 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:50:43 r7_cp chunk 38/58 (computed) | 19000/28530 prompts | 0.160 s/sentence | ~25.4 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:51:56 r7_cp chunk 39/58 (computed) | 19500/28530 prompts | 0.160 s/sentence | ~24.0 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:53:07 r7_cp chunk 40/58 (computed) | 20000/28530 prompts | 0.159 s/sentence | ~22.6 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:54:35 r7_cp chunk 41/58 (computed) | 20500/28530 prompts | 0.160 s/sentence | ~21.4 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:56:00 r7_cp chunk 42/58 (computed) | 21000/28530 prompts | 0.160 s/sentence | ~20.1 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:57:10 r7_cp chunk 43/58 (computed) | 21500/28530 prompts | 0.159 s/sentence | ~18.7 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:58:43 r7_cp chunk 44/58 (computed) | 22000/28530 prompts | 0.160 s/sentence | ~17.4 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+04:59:53 r7_cp chunk 45/58 (computed) | 22500/28530 prompts | 0.160 s/sentence | ~16.0 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+05:01:04 r7_cp chunk 46/58 (computed) | 23000/28530 prompts | 0.159 s/sentence | ~14.7 min left | free 109.7 GB | mlx active 6.7 GB peak 6.9 GB
+05:02:39 r7_cp chunk 47/58 (computed) | 23500/28530 prompts | 0.160 s/sentence | ~13.4 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:03:52 r7_cp chunk 48/58 (computed) | 24000/28530 prompts | 0.160 s/sentence | ~12.0 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:05:02 r7_cp chunk 49/58 (computed) | 24500/28530 prompts | 0.159 s/sentence | ~10.7 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:06:11 r7_cp chunk 50/58 (computed) | 25000/28530 prompts | 0.159 s/sentence | ~9.3 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:07:20 r7_cp chunk 51/58 (computed) | 25500/28530 prompts | 0.158 s/sentence | ~8.0 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:08:34 r7_cp chunk 52/58 (computed) | 26000/28530 prompts | 0.158 s/sentence | ~6.7 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:09:47 r7_cp chunk 53/58 (computed) | 26500/28530 prompts | 0.158 s/sentence | ~5.3 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:11:00 r7_cp chunk 54/58 (computed) | 27000/28530 prompts | 0.158 s/sentence | ~4.0 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:12:10 r7_cp chunk 55/58 (computed) | 27500/28530 prompts | 0.157 s/sentence | ~2.7 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:13:20 r7_cp chunk 56/58 (computed) | 28000/28530 prompts | 0.157 s/sentence | ~1.4 min left | free 109.6 GB | mlx active 6.7 GB peak 6.9 GB
+05:14:33 r7_cp chunk 57/58 (computed) | 28500/28530 prompts | 0.157 s/sentence | ~0.1 min left | free 109.5 GB | mlx active 6.7 GB peak 6.9 GB
+05:14:37 r7_cp chunk 58/58 (computed) | 28530/28530 prompts | 0.157 s/sentence | ~0.0 min left | free 109.5 GB | mlx active 6.7 GB peak 6.9 GB
+05:14:40 done r7_cp: wall 74.6 min, 0.157 s/sentence computed
+05:14:40 | layer | STS12 | STS13 | STS14 | STS15 | STS16 | STS-B | SICK-R | Avg |
+05:14:40 | 27 | 66.24 | 82.82 | 73.35 | 79.52 | 78.48 | 78.59 | 73.95 | 76.14 |
+05:14:40 free disk 109.5 GB
+05:14:40 ========================================================================================
+05:14:40 END OF PASS  r7_cp
+05:14:40 start 2026-11-05 04:00:00   end 2026-11-05 05:14:40   wall 74.64 min
+05:14:40 s/sentence computed: 0.1568
+05:14:40 chunks: 58 computed, 0 reused, 58 total
+05:14:40 settings: plan vanilla, view fwd, split test, layers 27, batched False, limit None, CP act_layer 4 alpha 2 (frozen cp_alone)
+05:14:40 free disk: 109.5 GB  (df -h ~: 102Gi avail of 460Gi)
+05:14:40 cache meta.json sha256[:12] af87f5f00d99  cache/test/r7_cp/meta.json
+05:14:40 python 3.11.9  ~/Downloads/tp_project/env/mlx/bin/python
+05:14:40 kernel tp-mlx -> ~/Downloads/tp_project/env/mlx/bin/python
+05:14:40 log: logs/r7_cp.log
+05:14:40 ========================================================================================
