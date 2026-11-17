@@ -1,17 +1,3 @@
-"""One-command runner for the rest of Stage 5 (USER-RUN): bash scripts/run_stage5.sh
-
-Runs, in order, each step only if it has not already passed / been recorded (resume logic):
-  0 preflight   1 S5.1 freeze   2 S5.2 dev gate   3 dry run + comparison   4 run 10 test pass (caffeinate, foreground, resumable)
-  5 PAUSE L30   6 score-s5.3 (logs S5.3) + PAUSE L31   7 bootstrap C4 --record + PAUSE L32   8 gate-s5.4 (logs S5.4) + PAUSE L36
-  9 summary
-Rules: stops at the first failure, REFUSED, non-PASS gate or non-zero exit and says what to send; never retries on its own; never
-runs a step that logs a gate or appends to results.jsonl twice (a gate already logged as FAIL stops the runner). If a step already
-logged but its screenshot was not filed (crash between step and pause), it reprints the screen with live_step.py --show (read-only,
-labelled REPRINT) and says so. Everything shown is also appended to logs/stage5_run.log (screen output unchanged).
-Rules and settings: notes/s5_preregistration.md (hashed). This runner changes none of them; it only calls the scripts.
-
-Test options (scratch only; refused unless TP_SCRATCH_STATE is set): --dry-chain --root DIR [--force-fail 3|6] [--crash-after 6|7|8].
-"""
 import argparse
 import datetime
 import hashlib
