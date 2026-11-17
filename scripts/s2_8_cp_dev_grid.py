@@ -1,16 +1,3 @@
-"""S2.8 CP-alone dev grid (AGENT-RUN; plan 10.2, notes/s2_8_preregistration.md). STS-B dev only. Logs no gate, freezes nothing.
-
-Grid: loop index (= CP act_layer) in {2,3,4,5,6} x alpha in {1,2,4}; vanilla, layer 27, stop after 27, batch 1, 8-bit model.
-Auxiliary prompt = ref/cp_repo/evaluate_intervention.py:201 (CP cleaning, no <PST>); B = last-position o_proj input of
-layers[index] from the auxiliary pass (stop_after = index + 1), computed once per index and cached.
-Steering = src/cp_mlx.py (parity-tested in S2.7): last-position o_proj input <- alpha * (A - B).
-Caches: cache/dev/cp_aux_i<idx>_B (B vectors), cache/dev/cp_i<idx>_a<alpha>_L27 (states). Scores: results/dev/S2.8_cp_grid.json
-and .md, plus one results.jsonl line per pass (stage "S2.8-grid", dev). Resumable: finished chunks are reused.
-
-Usage (project root, venv active):
-  caffeinate -dims python scripts/s2_8_cp_dev_grid.py > logs/S2.8_grid.log 2>&1
-  python scripts/s2_8_cp_dev_grid.py --extension IDX 0.5    (the one pre-registered extension, only if the best alpha is 1)
-"""
 import argparse
 import datetime
 import hashlib
