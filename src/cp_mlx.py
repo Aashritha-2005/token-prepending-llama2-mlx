@@ -1,11 +1,3 @@
-"""CP steering wrapper for MLX (plan Appendix E; CP facts from notes/cp_spec.md).
-
-Wraps self_attn.o_proj of ONE layer (loop index = CP act_layer). Operates on the input to o_proj (the concatenated
-head outputs), LAST position only, as CP's `scaled` strategy does (activation_intervention/__init__.py:219-234):
-    capture: B = x[:, -1, :]                      (auxiliary pass, truncated with stop_after = act_layer + 1)
-    steer:   x[:, -1, :] <- alpha * (x[:, -1, :] - B)   (replacement, not addition)
-sign = -1 gives alpha * (B - A); it exists only for the S2.7 mutation test.
-"""
 import mlx.core as mx
 import mlx.nn as nn
 
