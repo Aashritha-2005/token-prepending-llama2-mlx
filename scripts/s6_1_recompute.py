@@ -1,9 +1,6 @@
-"""S6.1 (AGENT-RUN, read-only): recompute every logged paired bootstrap from the saved per-pair cosines with the
+"""S6.1: recompute every logged paired bootstrap from the saved per-pair cosines with the
 S0.6-tested src/stats.paired_bootstrap (B = 2000, seed 0) and compare with the values in results/results.jsonl.
 Selects nothing, logs no gate, writes only results/figures/report_v3/S6.1_recompute.json (+ .csv).
-Stops with exit 3 on any mismatch > 1e-9.
-
-Usage (project root, venv active):  python scripts/s6_1_recompute.py
 """
 import csv
 import json
