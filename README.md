@@ -25,7 +25,7 @@ Run 10 vs run 5 is read as "no resolvable difference".
 - `frozen_settings.json` settings frozen before any test pass
 - `results/results.jsonl` every recorded result
 - `notes/` mechanism notes, reproduction table, enhancement readings
-- `env/requirements-pinned.txt` pinned dependencies (Python 3.11)
+- `requirements.txt` pinned dependencies (Python 3.11)
 
 ## Not included
 Model weights, caches, datasets, and the reference clones (`ref/token_prepending`, `ref/cp_repo`) are not in this repo.

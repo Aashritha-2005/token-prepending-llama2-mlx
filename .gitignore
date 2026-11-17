@@ -19,9 +19,6 @@ __pycache__/
 !scripts/
 !notes/
 
-!env/
-env/*
-!env/requirements-pinned.txt
 
 !results/
 results/*
@@ -38,3 +35,11 @@ results/figures/report_v3/*
 !results/figures/report_v3/F8_forest_all_comparisons.png
 !results/figures/report_v3/F9_all_runs_avg_cost.png
 !results/screenshots/
+
+!requirements.txt
+
+# virtual environments and secrets
+env/
+venv/
+.venv/
+.env.*
