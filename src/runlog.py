@@ -1,8 +1,3 @@
-"""Project root, environment check, gate log and results log (plan Appendix G).
-
-ROOT is defined here and nowhere else in src/. Notebooks set PROJECT_ROOT in their first
-cell and assert it equals this ROOT.
-"""
 import datetime
 import json
 import os
@@ -16,7 +11,7 @@ GATE_LOG = ROOT / "gate_log.md"
 RESULTS = ROOT / "results" / "results.jsonl"
 FROZEN = ROOT / "frozen_settings.json"
 LOGS = ROOT / "logs"
-SCRATCH = os.environ.get("TP_SCRATCH_STATE")   # tests only: state files live in this folder instead of the project
+SCRATCH = os.environ.get("TP_SCRATCH_STATE") 
 if SCRATCH:
     GATES, GATE_LOG, RESULTS, FROZEN, LOGS = (Path(SCRATCH) / "gates.json", Path(SCRATCH) / "gate_log.md",
                                               Path(SCRATCH) / "results.jsonl", Path(SCRATCH) / "frozen_settings.json", Path(SCRATCH) / "logs")
