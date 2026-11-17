@@ -1,0 +1,232 @@
+{
+ "tp_reproduction": {
+  "date": "2026-11-03",
+  "settings": {
+   "tp_start": 1,
+   "tp_exit": 7,
+   "output_layer": 27
+  },
+  "dev": {
+   "e7": 82.44488572171834,
+   "e8": 82.15461808367913
+  },
+  "model": "models/llama2_7b_q8_meta (8-bit, group 64)",
+  "pst_row": "ref/pst_row_3407.npy",
+  "reason": "e=7 won outright on STS-B dev at layer 27 (82.44 vs 82.15 for e=8); the tie rule did not apply"
+ },
+ "vanilla": {
+  "date": "2026-11-03",
+  "settings": {
+   "plan": "vanilla"
+  },
+  "model": "models/llama2_7b_q8_meta (8-bit, group 64)",
+  "note": "nothing tuned; r1 = layer 32 normed, r2 = layer 27; view fwd, batch 1"
+ },
+ "tp_reproduction_e8": {
+  "date": "2026-11-03",
+  "settings": {
+   "tp_start": 1,
+   "tp_exit": 8,
+   "output_layer": 27
+  },
+  "model": "models/llama2_7b_q8_meta (8-bit, group 64)",
+  "dev": {
+   "e8": 82.15461808367913
+  },
+  "note": "r3' per plan S1.7: the non-chosen of {7, 8}, run on test only to answer L4 (config 1/7 vs paper text 'after layer 8'); not tuned"
+ },
+ "reverseeol": {
+  "date": "2026-11-03",
+  "settings": {
+   "views": [
+    "fwd",
+    "rev"
+   ],
+   "alpha": 0.5,
+   "normalize": true,
+   "punct": "keep_final",
+   "output_layer": 27,
+   "plan": "vanilla"
+  },
+  "dev": {
+   "chosen": 84.10850484132992,
+   "best": 84.1127619617055,
+   "r2_dev": 79.7185119540977,
+   "rev_only": 78.92564877348241
+  },
+  "model": "models/llama2_7b_q8_meta (8-bit, group 64)",
+  "reason": "S2.3 selection rule: best dev (0.5, False, 'keep_final') = 84.1128; ties < 0.05 go to defaults (0.5, on, full); tied set [(0.5, True, 'keep_final'), (0.5, False, 'keep_final')] -> chosen (0.5, True, 'keep_final'). alpha weights the forward view."
+ },
+ "enh1": {
+  "date": "2026-11-04",
+  "settings": {
+   "views": [
+    "fwd",
+    "rev"
+   ],
+   "alpha": 0.6,
+   "normalize": true,
+   "punct": "keep_final",
+   "plan": "tp",
+   "tp_start": 1,
+   "tp_exit": 7,
+   "output_layer": 27,
+   "batched": true,
+   "pst": "ref/pst_row_3407.npy",
+   "wording": {
+    "fwd": "This sentence : {PST}\"{S}\" means in one word:\"",
+    "rev": "This reversed sentence : {PST}\"{S}\" means in one word:\""
+   }
+  },
+  "dev": {
+   "chosen": 84.62614897080363,
+   "best": 84.62982797690127,
+   "r3_dev": 82.44488572171834,
+   "r2_dev": 79.7185119540977,
+   "rev_only": 77.95715842540159,
+   "controls_at_chosen": {
+    "6b": 82.42613428529025,
+    "6a": 84.42036448715254
+   }
+  },
+  "model": "models/llama2_7b_q8_meta (8-bit, group 64)",
+  "reason": "S3.2 selection rule restricted to punct passing the rev-only check (['keep_final']; user decision, gate_log.md); original rule chose (0.6, True, 'full'). Restricted: best dev (0.6, False, 'keep_final') = 84.6298; ties < 0.05 go to defaults (0.5, on, full); tied set [(0.6, True, 'keep_final'), (0.6, False, 'keep_final')] -> chosen (0.6, True, 'keep_final'). alpha weights the forward view. e* shared across views (no re-tuning of e or M)."
+ },
+ "cp_alone": {
+  "date": "2026-11-05",
+  "settings": {
+   "act_layer": 4,
+   "paper_l": 5,
+   "alpha": 2.0,
+   "aux_prompt": "The irrelevant information of this sentence : \"*sent 0*\" means in one word:\"",
+   "main_prompt": "This sentence : \"*sent 0*\" means in one word:\"",
+   "strategy": "scaled",
+   "output_layer": 27,
+   "stop_after": 27,
+   "plan": "vanilla",
+   "batched": false,
+   "model": "models/llama2_7b_q8_meta"
+  },
+  "dev": {
+   "chosen": 80.94475977543338,
+   "best": 80.94475977543338,
+   "r2_dev": 79.7185119540977,
+   "grid": {
+    "i2|a1": 78.31494710647907,
+    "i2|a2": 78.39659360410532,
+    "i2|a4": 78.58602220458292,
+    "i3|a1": 80.25094203683588,
+    "i3|a2": 80.20190374676626,
+    "i3|a4": 80.0595137908502,
+    "i4|a1": 80.8991040499757,
+    "i4|a2": 80.94475977543338,
+    "i4|a4": 80.88567557095769,
+    "i5|a1": 79.34444995218128,
+    "i5|a2": 79.20770181510531,
+    "i5|a4": 79.528434598724,
+    "i6|a1": 79.9328190414951,
+    "i6|a2": 80.07619102655862,
+    "i6|a4": 80.71020320786944
+   }
+  },
+  "reason": "notes/s2_8_preregistration.md rule: best dev; ties < 0.05 -> published (index 4, alpha 2), then lower alpha."
+ },
+ "enh2": {
+  "date": "2026-11-05",
+  "settings": {
+   "act_layer": 4,
+   "paper_l": 5,
+   "alpha": 4.0,
+   "aux_tp": true,
+   "prompts": {
+    "main_tp": "This sentence : <PST> \"*sent 0*\" means in one word:\"",
+    "aux": "The irrelevant information of this sentence : \"*sent 0*\" means in one word:\"",
+    "aux_tp": "The irrelevant information of this sentence : <PST> \"*sent 0*\" means in one word:\"",
+    "sentiment": "The sentence : \"*sent 0*\" reflects the sentiment in one word:\"",
+    "sentiment_tp": "The sentence : <PST> \"*sent 0*\" reflects the sentiment in one word:\""
+   },
+   "strategy": "scaled",
+   "tp_start": 1,
+   "tp_exit": 7,
+   "output_layer": 27,
+   "stop_after": 27,
+   "plan": "tp",
+   "batched": false,
+   "model": "models/llama2_7b_q8_meta",
+   "pst": "ref/pst_row_3407.npy"
+  },
+  "dev": {
+   "chosen": 82.91842199157128,
+   "best": 82.91842199157128,
+   "r3_dev": 82.44488572171834,
+   "pilot": {
+    "with_tp": 82.80492048975513,
+    "without_tp": 82.70144177065653
+   },
+   "grid": {
+    "i2|a1": 82.22690621185774,
+    "i2|a2": 82.21259677137766,
+    "i2|a4": 82.15767929575611,
+    "i3|a1": 82.30924381316379,
+    "i3|a2": 82.05024238887255,
+    "i3|a4": 80.77216428265791,
+    "i4|a1": 82.68914941341899,
+    "i4|a2": 82.80492048975513,
+    "i4|a4": 82.91842199157128,
+    "i5|a1": 81.86843479009556,
+    "i5|a2": 81.61104671211345,
+    "i5|a4": 81.40954052322981,
+    "i6|a1": 82.56483100022339,
+    "i6|a2": 82.42460492480419,
+    "i6|a4": 82.3241674889432,
+    "i4|a6": 82.66559548257342,
+    "i4|a8": 82.05135929355792
+   }
+  },
+  "reason": "notes/s4_preregistration.md + addendum 1: D1 pilot rule; 17 cells; best dev; ties < 0.05 -> published (4, 2), then lower alpha; a best at alpha 8 or index 6 is taken with a warning.",
+  "preregistration_sha256": "490f8f9789f04865e7e22ac41c727d44be2c33efa7788db27f1125d7ea324f6c",
+  "addendum1_sha256": "8ceb94438719837237e29e8fb578e4bdf118a79e0b6bf1be6c4bd36c146063d7",
+  "edge_warning": false
+ },
+ "comb": {
+  "date": "2026-11-05",
+  "settings": {
+   "views": [
+    "fwd",
+    "rev"
+   ],
+   "a_v": 0.6,
+   "normalize": true,
+   "punct": "keep_final",
+   "fwd_states": {
+    "test": "cache/test/r8_cptp",
+    "dev": "cache/dev/cptp_i4_a4_tp_L27"
+   },
+   "rev_states": {
+    "test": "cache/test/r10_cptp_rev",
+    "dev": "cache/dev/cptp_i4_a4_tp_rev_keep_final_L27"
+   },
+   "act_layer": 4,
+   "paper_l": 5,
+   "alpha": 4.0,
+   "aux_tp": true,
+   "strategy": "scaled",
+   "plan": "tp",
+   "tp_start": 1,
+   "tp_exit": 7,
+   "output_layer": 27,
+   "stop_after": 27,
+   "batched": false,
+   "model": "models/llama2_7b_q8_meta",
+   "pst": "ref/pst_row_3407.npy",
+   "prompts": {
+    "main_rev": "This reversed sentence : <PST> \"*sent 0*\" means in one word:\"",
+    "aux_rev": "The irrelevant information of this sentence : <PST> \"*sent 0*\" means in one word:\""
+   }
+  },
+  "enh1_entry_sha256": "1041899fc2c20eb667a9f380581c1b707f913499a247055029e56ce3e1dfe76e",
+  "enh2_entry_sha256": "a7299bec3fd5459e3a11876761b9dd7350b68e30d7d4fe6b4925f4c96cb0cacf",
+  "preregistration_sha256": "7823735e1ab1be1bfbfb4c0a215f2cbe00e4cf2eb91b30d3497fee52787cb122",
+  "reason": "notes/s5_preregistration.md: run 10 = combine(run 8 forward, CP+TP reversed); all settings inherited, nothing tuned."
+ }
+}
