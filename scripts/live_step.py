@@ -1,35 +1,5 @@
-"""LIVE combine-and-score, bootstrap and tolerance-gate printouts, for screenshots of steps as they run.
+# LIVE combine-and-score, bootstrap and tolerance-gate printouts, for screenshots of steps as they run.
 
-Every number is computed when this runs: the cached hidden states are loaded, views are combined with the frozen
-settings, Spearman is computed per dataset, and bootstraps are run on those fresh pair cosines. Nothing is read from an
-earlier summary (scores_*.json / results.jsonl are only used for an optional "matches the saved file" line).
-Output: a "LIVE RUN" banner with date and time to the second, then a paper-style table with [PAPER]/[PREPRINT] rows from
-notes/reference_numbers.json (checked against plan 2.3). Fits 100x40. Prints only; writes no file and no state.
-Table code is reused from scripts/show_result.py. Future scoring / gate scripts import live_header, live_table, gate_block.
-
-Usage (project root, venv active):
-  python scripts/live_step.py --evidence L07_run5_scored score run5
-  python scripts/live_step.py score --cache cache/test/NEW:27 --cache cache/test/NEW2:27 --frozen enh1 --ref paper_prompteol_tp --label "run 8"
-  python scripts/live_step.py --evidence L08_C2_gate bootstrap C2
-  python scripts/live_step.py --evidence L09_run6b_gate gate 6b --vs r3 --avg-tol 1.0           (S3.4 sanity form)
-  python scripts/live_step.py gate run4 --ref preprint_reverseeol --avg-tol 3.0 --ds-tol 4.0 --above r2   (Tier B form)
-  python scripts/live_step.py --evidence L07_r7_cp_scored run7            (S2.9: run 7 table + Tier B; logs gate S2.9)
-  python scripts/live_step.py --evidence L08_r7_cp_bootstrap_gate bootstrap E5 --record   (run 7 vs r2, exploratory)
-  python scripts/live_step.py --evidence L09_S2.10_cp_verdict_gate verdict-s2.10      (logs gate S2.10)
-  python scripts/live_step.py --evidence L19_r8_r9_cptp_scored scored-s4.6        (Stage 4: run 8 + control 9; logs S4.6)
-  python scripts/live_step.py --evidence L20_C3_cptp_bootstrap_gate bootstrap C3 --record   (primary C3: run 8 vs r3)
-  python scripts/live_step.py --evidence L21_E6_run8_vs_run7_gate bootstrap E6 --record     (E6/E7/E8 exploratory)
-  python scripts/live_step.py --evidence L24_S4.7_cptp_reading_gate gate-s4.7     (logs S4.7, writes notes/enh2_reading.md)
-  python scripts/live_step.py --evidence L25_S4.8_cptp_stage_gate gate-s4.8       (checklist and cost; logs S4.8)
-  python scripts/live_step.py --evidence L31_r10_cptp_rev_scored score-s5.3   (Stage 5: run 10 scored; logs S5.3)
-  python scripts/live_step.py --evidence L32_C4_comb_bootstrap_gate bootstrap C4 --record   (primary C4: run 10 vs run 5)
-  python scripts/live_step.py --evidence L36_S5.4_comb_reading_gate gate-s5.4   (E9-E11 recorded, reading, cost, checklist; logs S5.4)
-  add --dry to any of these: banner says DRY RUN, nothing is logged or written.
-  --show (scored-s4.6, gate-s4.8, score-s5.3, bootstrap C4, gate-s5.4 only; read-only): the same screen recomputed from the caches, labelled
-    "REPRINT (already logged at <time>)", for a screenshot missed after the step had logged. Refuses if nothing was logged yet.
-Presets: r1 r2 r3 r3p run4 run5 6a 6b 6c run7 run8 run9 run10; bootstraps C1-C4 D1-D3 E1-E11 (B = 2000, seed 0, plan 8.2 / App. C).
---record (bootstraps) appends the result to results.jsonl and saves the per-pair cosines to results/test/pairs_boot_<ID>.npz.
-"""
 import argparse
 import datetime
 import json
