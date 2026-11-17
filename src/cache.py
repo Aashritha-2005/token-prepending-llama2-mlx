@@ -1,9 +1,4 @@
-"""Chunked, resumable embedding cache and frozen-settings guard (plan Appendix F).
-
-Deviation from Appendix F: freshly computed chunks are returned after the same float16 round trip
-as chunks loaded from disk, so an interrupted-and-resumed run gives bit-identical results to an
-uninterrupted one (gate S0.11).
-"""
+# Chunked, resumable embedding cache and frozen-settings guard 
 import json
 import os
 import time
