@@ -1,19 +1,3 @@
-"""Screen-sized evidence printout of SAVED results (no model pass, nothing recomputed except Spearman checks on saved pair files).
-
-Fits a 100-column x 40-row terminal with the command line and prompt (the printout itself is kept to <= 38 lines;
-the last line reports the measured size). Every number comes from the files it lists with sha256 and modification time.
-
-Usage (project root, venv active):
-  python scripts/show_result.py --evidence E07_r3_tp_e7_test_vs_paper --run r3_tp_e7
-  python scripts/show_result.py --evidence E11_run5_and_controls_compare --compare r2 r3 run4 run5 6a 6b 6c
-  python scripts/show_result.py --evidence E12_bootstrap_C2 --bootstrap C2
-  python scripts/show_result.py --evidence E01_stage0_gates --gates S0
-  python scripts/show_result.py --evidence E03_s012_model_load_8bit --gate S0.12
-  python scripts/show_result.py --evidence E05_s11_s14_dev_results --dev
-  python scripts/show_result.py --evidence E00_env_python311_kernel_tp-mlx --env
-Runs: r1 r2 r3 r3p run4 run5 6a 6b 6c, or file stems r1r2_vanilla r3_tp_e7 r3p_tp_e8 r4_reverseeol r5_enh1_fwd_rev_tp
-r6a_fwd_shuf_tp r6b_fwd_fwdrevprompt_tp r6c_rev_only_tp.
-"""
 import argparse
 import datetime
 import hashlib
