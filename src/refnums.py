@@ -1,7 +1,3 @@
-"""Published reference values (notes/reference_numbers.json), checked before use.
-
-[PAPER] rows must equal the table in TP_Master_Plan_v3.md section 2.3; [PREPRINT] rows must equal notes/reverseeol_spec.md
-field 7, and their averages must appear in the plan tagged [PREPRINT]. load_refs() raises AssertionError on any mismatch."""
 import json
 import re
 
